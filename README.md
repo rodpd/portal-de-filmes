@@ -6,8 +6,8 @@ Faz uso da Fetch API para consumir a [API do The Movie Database](https://develop
 
 [Site publicado no repl.it](https://diw.rodpd.repl.co/)
 
-!(/imgs/print1.png)
-!(/imgs/print2.png)
-!(/imgs/print3.png)
-!(/imgs/print3.png)
-!(/imgs/print3.png)
+![](/imgs/print1.png)
+![](/imgs/print2.png)
+![](/imgs/print3.png)
+![](/imgs/print4.png)
+![](/imgs/print5.png)
