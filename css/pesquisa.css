@@ -1,0 +1,29 @@
+#itens_pesquisa img {
+    padding: 20px;
+    width: 100%;
+    display: inline;
+    border-radius: 30px;
+}
+
+#itens_pesquisa p {
+    padding: 0;
+    margin: 0;
+}
+
+#itens_pesquisa h3 {
+    margin: 0;
+}
+
+#itens_pesquisa .item_pesquisa {
+    margin-top: 20px;
+}
+
+#itens_pesquisa a {
+    text-decoration: none;
+    color: black;
+}
+
+#itens_pesquisa a:hover {
+    background-color: #eeeeee;
+    color: #0077ff;
+}

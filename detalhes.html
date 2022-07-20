@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/detalhes.css">
+    <script src="js/detalhes.js"></script>
+    <title>Portal de Filmes</title>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg bg-darkgray navbar-light ml-auto">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="imgs/logo.png" class="logo" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#playing">Now playing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#popular">Popular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#upcoming">Upcoming</a>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <form id="myform" action="pesquisa.html" method="GET">
+                                <input type="text" name="s" placeholder="Search movie">
+                                <input type="submit" value="Search">
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+
+<body onload="carregarItem()">
+
+    <section class="secao" id="detalhe">
+    
+    </section>
+
+</body>
+
+
+<footer class="container-fluid bg-gray p-3 text-center">
+    Copyright 2022 - Disciplina de Desenvolvimento de Interfaces Web - <strong>ICEI PUC Minas</strong>
+    <img id="logo_footer" src="imgs/logo.png" alt="logo">
+</footer>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</html>

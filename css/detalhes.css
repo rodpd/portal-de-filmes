@@ -1,0 +1,22 @@
+.logo_producao {
+    height: 35px;
+    padding: 0 10px;
+}
+
+.badge {
+    margin: 0 5px;
+}
+
+#banner_detalhes {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+h1 {
+    padding: 30px 0;
+    text-align: center;
+}
+
+p {
+    padding: 5px 0;
+}

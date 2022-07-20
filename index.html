@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/functions.js"></script>
+    <title>Portal de Filmes</title>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg bg-darkgray navbar-light ml-auto">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="imgs/logo.png" class="logo" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#playing">Now playing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#popular">Popular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#upcoming">Upcoming</a>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <form id="myform" action="pesquisa.html" method="GET">
+                                <input type="text" name="s" placeholder="Search movie">
+                                <input type="submit" value="Search">
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+
+<body class="container-fluid" onload="carregarPagina()">
+
+    <section class="secao bg-gray" id="playing">
+        <h2 class="titulo">Now playing</h2>
+        <div>
+            <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner" id="itens_lancamentos">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="secao" id="popular">
+        <h2 class="titulo">Popular</h2>
+        <div class="row" id="itens_destaque">
+        </div>
+        <div class="text-end">
+            <button class="btn btn-secondary carregar_mais" onclick="carregarMaisDestaques()">
+                + Load more
+            </button>
+        </div>
+    
+    </section>
+
+
+    <section class="secao bg-gray" id="upcoming">
+        <h2 class="titulo">Upcoming</h2>
+        <div class="row" id="itens_futuros">
+        </div>
+        <div class="text-end">
+            <button class="btn btn-secondary carregar_mais" onclick="carregarMaisFuturos()">
+                + Load more
+            </button>
+        </div>
+    </section>
+
+</body>
+
+
+<footer class="container-fluid bg-darkgray p-3 text-center">
+    Copyright 2022 - Rodrigo - Disciplina de Desenvolvimento de Interfaces Web - <strong>ICEI PUC Minas</strong>
+    <img id="logo_footer" src="imgs/logo.png" alt="logo">
+</footer>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</html>
